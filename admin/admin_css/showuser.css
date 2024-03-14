@@ -1,0 +1,98 @@
+.list-contain{
+    margin:2% 30%;
+    text-align: center;
+}
+header{
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    margin: 0.7em;
+    font-weight:bold;
+    color:#3d2f2c;
+    font-size:150%;
+}
+#page{
+    width: 20%;
+    text-align: center;
+}
+#list{
+    margin-top: 2%;
+    /* background-color: #C4906F; */
+    background-color: #F8D4A4;
+    border-radius: 15px;
+}
+.showuser{
+    text-align: left;
+    padding: 2%;
+}
+.his,.info,.del{
+    cursor: pointer;
+    float:right;
+    margin-right:2%;
+    border-radius: 10px;
+    padding: 0.5% 2%;
+    text-decoration: none;
+    /* color: black; */
+    color: rgb(0, 0, 0);
+    background-color: #c1986d;
+}
+.his:hover,.info:hover,.del:hover{
+    float:right;
+    margin-right:2%;
+    border-radius: 10px;
+    padding: 0.5% 2%;
+    text-decoration: none;
+    color: black;
+    /* color:#c1986d; */
+    background-color: white;
+}
+@media (max-width:415px) {
+    .list-contain{
+        margin:auto;
+        padding: 10px;
+        text-align: center;
+    }
+    .showuser{
+        text-align: left;
+        padding: 2%;
+        height: 10%;
+        font-size: 12px;
+        font-weight: bold;
+    }
+    .his,.info,.del{
+        font-size: 12px;
+        font-weight: bold;
+        border-radius: 10px;
+        padding: 1% 1%;
+        
+    }
+}
+
+@media (min-width:415px) and (max-width:900px) {
+    #list{
+        border-radius: 30px;
+    }
+    header{
+        font-size: 200%;
+    }
+    .list-contain{
+        margin: 20px;
+        padding: 20px;
+        text-align: center;
+    }
+    .showuser{
+        text-align: left;
+        padding: 2%;
+        height: 10%;
+        font-size: 25px;
+    }
+    .his,.info,.del{
+        font-size: 25px;
+        border-radius: 15px;
+        padding: 1% 1%;
+    }
+    #page{
+        width: 30%;
+        font-size: 20px;
+        text-align: center;
+    }
+}

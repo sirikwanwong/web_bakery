@@ -1,0 +1,41 @@
+.order{
+    padding: 2%;
+    margin:0 5%;
+}
+table{
+    margin-top: 2%;
+    border: 1px solid black;
+    border-radius:1em;
+    border-spacing: 0.5em;
+    /* width:100%;  */
+}
+th,td{
+    text-align: center;
+    width: 5%;
+    border-radius:1em;
+    padding:1% 2%;
+    background-color:#F8D4A4;
+}
+table a{
+    cursor: pointer;;
+    color:#3845cf;
+}
+.order-table>a{
+    text-decoration: none;
+}
+.list-contain{
+    text-align: center;
+}
+#page{
+    width: 20%;
+    text-align: center;
+}
+@media (min-width:415px) and (max-width:900px)  {
+    table{
+        font-size: 15px;
+        padding: 5px;
+    }
+    #page{
+        font-size: 15px;
+    }
+}

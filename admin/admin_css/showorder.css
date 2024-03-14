@@ -1,0 +1,77 @@
+.all-contain{
+    margin:3% 10%;
+    text-align: center;
+}
+#page{
+    width: 20%;
+    text-align: center;
+}
+table{
+    margin: auto;
+}
+.payment{
+    text-decoration: none;
+    color: black;
+}
+.all-contain>header{
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    margin: 0.7em;
+    font-weight:bold;
+    color:#3d2f2c;
+    font-size:150%;
+}
+.show>td{
+    text-align: center;
+    padding:1em;
+    background-color:#F8D4A4;
+}
+.amount{
+    text-align: center;
+    border-radius:2em;
+    padding:2%;
+    margin-top: 0.1%;
+    margin-left: 38%;
+    background-color:#F8D4A4;
+    width: 20%;
+}
+.button_back{
+    background-color:#e1dcda ;
+    width: 10%;
+    height: 7%;
+    border-radius: 15px;
+}
+.button_back:hover{
+    background-color:#544540;
+    color:#FFFFFF;
+}
+.OK{
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
+
+.wrong{
+    background-color: #FFD0D0;
+    color : #870000;
+}
+.pass{
+    background-color: #98ff9c;
+    color : black;
+}
+@media (min-width:415px) and (max-width:900px) {
+    .all-contain{
+        margin:30px;
+        text-align: center;
+    }
+    .all-contain>header{
+        font-size:200%;
+    }
+    #page{
+        font-size: 20px;
+    }
+    .show{
+        font-size: 18px;
+    }
+}

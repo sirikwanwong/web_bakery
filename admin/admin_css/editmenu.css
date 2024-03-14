@@ -1,0 +1,85 @@
+.add-block{
+    margin: 2% 30%;
+    padding: 1%;
+    border-radius: 10px;
+    background-color: #F8D4A4;
+}
+form{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+input{
+    margin-top: 1%;
+}
+header{
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    margin: 0.7em;
+    font-weight:bold;
+    color:#3d2f2c;
+    font-size:150%;
+}
+.img{
+    margin: auto;
+    width:50%;
+}
+.showlist{
+    border: 1px solid black;
+    text-align: center;
+    padding: 2%;
+    background-color: lightgray;
+}
+.clearlist{
+    border: none;
+    background-color: none;
+    padding: none;
+}
+.info{
+    cursor: pointer;
+    /* background-color: yellow; */
+    padding: 0 1%;
+}
+#submit{
+    margin-top: 1em;
+    background-color: #3d2f2c;
+    color:#FFFFFF;
+    width:15%;
+    height:2em;
+    border-radius:2em;
+    border:0;
+    cursor: pointer;
+}
+@media (max-width:415px) {
+    .add-block{
+        margin: 20px;
+        padding-bottom: 40px;
+    }
+    form{
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    input{
+        margin-top: 2%;
+    }
+    #submit{
+        width: 100%;
+    }
+}
+@media (min-width:415px) and (max-width:900px) {
+    .add-block{
+        margin: 20px;
+        padding-bottom: 40px;
+        font-size: 28px;
+    }
+    form{
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    input{
+        margin-top: 2%;
+        font-size: 20px;
+    }
+    #submit{
+        width: 100%;
+    }
+}

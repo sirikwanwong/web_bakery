@@ -1,0 +1,76 @@
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Everyday Baked Bakery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./main_css/home.css">
+    <link rel="stylesheet" href="./main_css/register.css">
+    <style>
+    </style>
+    <script>
+        let http = new XMLHttpRequest();
+        function send(){
+            let err = document.getElementById("valid");
+            let user = document.getElementById("username").value;
+            if(user!=""){
+                http.onreadystatechange = show;
+                let url = "./home_method/rgtmethod_checkuser.php?username="+user;
+                // console.log(url);
+                http.open("GET",url);
+                http.send();
+            }else{
+                let submit =document.getElementById("sub_bt");
+                submit.type="hidden";
+                document.getElementById("username").style.backgroundColor = "#FFFFFF";
+                err.innerHTML = "";
+                err.className = "none";
+            }
+        }
+        function show(){
+            let err = document.getElementById("valid");
+            if(http.readyState==4 && http.status==200){
+                console.log("http.responseText : "+http.responseText);
+                if(http.responseText == "invalid-user"){
+                    let submit =document.getElementById("sub_bt");
+                    submit.type="hidden";
+                    document.getElementById("username").style.backgroundColor = "#FFD0D0";
+                    document.getElementById("username").focus();
+                    err.innerHTML = "This username have been used.";
+                    err.className = "wrong";
+                }else{
+                    document.getElementById("username").style.backgroundColor = "#B1FF6F";
+                    let submit =document.getElementById("sub_bt");
+                    submit.type="submit";
+                    err.innerHTML = "";
+                    err.className = "none";
+                }
+            }
+        }
+        function back_homepage(){
+            document.location = "./home.php";
+        }
+    </script>
+    </head>
+    <body>
+    <header class="logo">
+        Register
+    </header>
+    <section class="register-box">
+            <div id="valid"></div>
+            
+            <form action="./home_method/rgtmethod_register.php" method="POST">
+                Username : <input type="text" id="username" placeholder="Username" pattern="[\w]{5,16}"name="user" title="กรุณากรอกตัวอักษร Aa-Zz หรือตัวเลขทั้งหมด 5-16 ตัวอักษรเท่านั้น" onblur="send()" required> * <br>
+                Password : <input type="password" id="pass" placeholder="Password" pattern="[\w]{5,16}"name="pass" title="กรุณากรอกตัวอักษร Aa-Zz หรือตัวเลขทั้งหมด 5-16 ตัวอักษรเท่านั้น" required> * <br>
+                Name : <input type="text" id="name" placeholder="ชื่อภาษาไทย/English" pattern="(([A-Z]|[a-z])[a-z]{2,19}|^[ก-๏]{2,19})" title="กรุณากรอกตัวอักษร Aa-Zz หรืออักษรภาษาไทยทั้งหมด 2-19 ตัวอักษรเท่านั้น" name="name" required> * <br>
+                Tel : <input type="text" id="tel" placeholder="081-2345678" pattern="0[0-9]{2}-[0-9]{7}" title="กรุณากรอกตามตัวอย่าง 081-2345678" name="tel" required> * <br>
+                <span class="input-address">Address : <textarea id="address" name="address" required></textarea> * </span><br>
+                <div class="submit-box"><input id="sub_bt" class="submit" type="hidden" value="register" onmouseover="send()">
+                <input class="submit" type="button" value="Back" onclick="back_homepage()"></div>
+            </form>
+    </section>
+    </body>
+</html>

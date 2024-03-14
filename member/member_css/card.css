@@ -1,0 +1,102 @@
+.card-content>header{
+    text-align: left;
+    font-family: 'Dancing Script', cursive;
+    margin: 0.7em;
+    font-weight:bold;
+    color:#3d2f2c;
+    font-size:200%;
+}
+/*ขนาดทั้งหน้า*/
+.card-content{ 
+    text-align: center;
+    border-radius:1em;
+    margin:1% 5%;
+    padding:0.2em;
+}
+img{
+    border-radius: 1em;
+}
+.card{
+    /* border-radius: 1em; */
+    text-align: left;
+    display:inline-block;
+    width:18%;
+    background-color:#544540;
+    color:#ffffff;
+    padding:0.5em;
+    margin: 1% 1% 0;
+}
+.dt_menu{
+    margin: 2% 0;
+}
+.name-menu{
+    text-align: center;
+    margin: 0;
+    border: 1px solid white;
+    padding: 2%;
+}
+.qty-cart{
+    width:3em;
+    margin:0 0.5em;
+}
+.quatity-button{
+    text-align: center;
+    padding: 3%;
+    margin: 0;
+}
+.quatity-button button{
+    font-size: 120%;
+    color: #ffffff;
+    border: none;
+    background-color: #544540;
+    cursor: pointer;
+}
+.order{
+    cursor: pointer;
+    font-size: 110%;
+    padding: 3%;
+    color:#3d2f2c;
+    border: none;
+    border-radius: 2em;
+    background-color: #ffffff;
+    margin-left: 5%;
+}
+@media (max-width:415px) {
+    .card-content>header{
+        text-align: center;
+    }
+    /*ขนาดทั้งหน้า*/
+    .card-content{ 
+        text-align: center;
+        border-radius:1em;
+        margin:1% 5%;
+        padding:0.2em;
+    }
+    img{
+        border-radius: 1em;
+    }
+    .card{
+        /* border-radius: 1em; */
+        width: 70%;;
+    }
+}
+@media (min-width:415px) and (max-width:900px){
+    .card-content>header{
+        text-align: center;
+        font-size: 50px;
+    }
+    /*ขนาดทั้งหน้า*/
+    .card-content{ 
+        text-align: center;
+        border-radius:1em;
+        margin:1% 5%;
+        padding:0.2em;
+    }
+    img{
+        border-radius: 1em;
+    }
+    .card{
+        /* border-radius: 1em; */
+        width: 40%;;
+    }
+}

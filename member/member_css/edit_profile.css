@@ -1,0 +1,57 @@
+.edit-box{
+    padding:2em;
+    margin: 10% 35%;
+    background-color:#544540;
+    color:#ffffff;
+    border-radius: 1em;
+}
+input,.input-address{
+    margin-top: 0.7%;
+}
+.submit{
+    padding: 10px;
+    width: 50%;
+    border-radius: 1em;
+}
+.submit-box{
+    text-align: center;
+}
+.submit:hover{
+    color: red;
+}
+.input-address{
+    display: flex;
+}
+textarea{
+    resize: none;
+    width: 60%;
+    padding-bottom: 2em;
+    margin-left:0.5em;
+}
+@media (max-width:415px) {
+    .edit-box{
+        padding:1em;
+        margin: 20px 40px;
+        border-radius: 0.5em;
+    }
+    textarea{
+        padding-bottom: 3em;
+    }
+    .submit{
+        padding: 5px;
+        width: 30%;
+    }
+}
+@media (min-width:415px) and (max-width:900px){
+    .edit-box{
+        padding:2em;
+        margin: 5% 25%;
+    }
+    textarea{
+        padding-bottom: 3em;
+    }
+    .submit{
+        padding: 5px;
+        width: 25%;
+    }
+}

@@ -1,0 +1,176 @@
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+body{
+    font-family: "Lucida Console", "Courier New", monospace;
+    background-color:#f6f3ee;
+    margin:0;
+}
+.logo{
+    font-family: 'Dancing Script', cursive;
+    font-size:1.5em;
+    color:#FFFFFF;
+    background-color:#3d2f2c;
+    margin:0;
+    padding:0.5em;
+    text-align:center;
+}
+
+.allbutton{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#3d2f2c ;
+    color: white;
+}
+.button ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.button li{
+    list-style: none;
+}
+.button li a{
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    display: block;
+}
+.button li:hover{
+    background-color: #544540;
+}
+.button ul li ul a{
+    color: #ab9b95;
+}
+.button ul li ul{
+    position: absolute;
+    padding: 0;
+
+    width: 186px;
+    background: white;
+    display: none;
+    
+}
+.button ul li ul li{
+    width: 100%;
+    border-top: 1px solid rgba(0, 0,0,.1);
+}
+.button ul li:hover > ul{
+    display: initial;
+}
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+@media (max-width:415px) {
+    .toggle-button{
+        display: flex;
+    }
+    .button{
+        display: none;
+        width: 100%;
+    } 
+    .allbutton{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .button ul{
+        width: 100%;
+        flex-direction: column;
+    }
+    .button li{
+        text-align: center;
+    }
+    .button li a{
+        padding: .5rem 1rem;
+    }
+    .button.active{
+        display: flex;
+    }
+
+    .button ul li ul{
+        position: absolute;
+        left: 0;
+        right: none;
+        width: 400px;
+        background: white;
+        display: none;
+        
+    }
+    .button ul li ul li{
+        width: 100%;
+        border-top: 1px solid rgba(0, 0,0,.1);
+    }
+    .button ul li:hover > ul{
+        display: initial;
+    }
+ }
+
+@media (min-width:415px) and (max-width:900px) {
+    .logo{
+        font-size:2.5em;
+    }
+    .toggle-button{
+        margin: 20px;
+        display: flex;
+    }
+    .button{
+        font-size: 25px;
+        display: none;
+        width: 100%;
+    } 
+    .allbutton{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .button ul{
+        width: 100%;
+        flex-direction: column;
+    }
+    .button li{
+        text-align: center;
+    }
+    .button li a{
+        padding: 1rem 1rem;
+    }
+    .button.active{
+        display: flex;
+    }
+
+    .button ul li ul{
+        position: absolute;
+        left: 0;
+        right: none;
+        width: 830px;
+        background: white;
+        display: none;
+        
+    }
+    .button ul li ul li{
+        width: 100%;
+        border-top: 1px solid rgba(0, 0,0,.1);
+    }
+    .button ul li:hover > ul{
+        display: initial;
+    }
+ }

@@ -1,0 +1,28 @@
+.input{
+    padding: 2%;
+    background:#e1dcda;
+    margin: 1% 25%;
+    border-radius: 1em;
+}
+.show{
+    margin:0 5%;
+}
+@media (max-width:415px) {
+    .input{
+        width: 65%;
+        margin: 1% 15%;
+    }
+    .show{
+        display: flex;
+    }
+}
+@media (min-width:415px) and (max-width:900px){
+    .input{
+        width: 70%;
+        margin: 1% 15%;
+        text-align: center;
+    }
+    .show{
+        display: flex;
+    }
+}

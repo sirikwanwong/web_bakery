@@ -1,0 +1,94 @@
+.order{
+    padding: 2%;
+    margin: 0 30%;
+}
+.order>header{
+    text-align: center;
+    font-size: 150%;
+}
+.basket-table{
+    text-align: center;
+}
+.other{
+    border-radius: 1em;
+}
+table{
+    border: 1px solid black;
+    border-radius: 1em;
+    border-spacing: 0.5em;
+    width: 100%;
+}
+
+th,td{
+    text-align: center;
+    border-radius: 2em;
+    background-color:#ffe1b9;
+}
+table a{
+    cursor:pointer;
+}
+#error{
+    text-align: left;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+#file_test{
+    margin-top:2%;
+}
+#showpayment{
+    padding: 12px;
+}
+.wrong{
+    background-color: #FFD0D0;
+    color : #870000;
+    border-radius:0.5em;
+    border:0.1em solid #870000;
+    padding:0.5em;
+}
+.accept{
+    cursor: pointer;
+    font-size: 110%;
+    background-color: #3d2f2c;
+    color: #FFFFFF;
+    padding: 1% 20%;
+    border-radius: 2em;
+    border: none;
+}
+@media (max-width:415px) {
+    *{
+        font-size: 12px;
+    }
+    .order>header{
+        font-size: 28px;
+    }
+    .order{
+        padding: 15px 30px ;
+        margin: 8px 10px;
+    }
+    .other legend{
+        font-size: 16px; 
+        font-weight: bold;    
+    }
+    .other{
+        padding: 3px; 
+    }
+}
+@media (min-width:415px) and (max-width:900px) {
+    *{
+        font-size: 22px;
+    }
+    .order>header{
+        font-size: 28px;
+    }
+    .order{
+        padding: 10px 40px ;
+        margin: 20px 30px;
+    }
+    .other legend{
+        font-size: 25px;
+        font-weight: bold;    
+    }
+    .other{
+        padding: 10px; 
+    }
+}
